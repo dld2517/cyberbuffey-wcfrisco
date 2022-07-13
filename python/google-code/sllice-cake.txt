@@ -1,0 +1,10 @@
+0.  create a set a..z
+1. get the first char of input
+2. push it onto the stack
+3. compare the number of entries on the stack with the ordinal of the set
+4. receive the next number
+5. if it is one more, push, else pop
+6. once we get to zero we have the unique set
+7. place sets_counter at 1
+8. we can keep processing the input, incrementing set counter
+9? verify by checking primes.
