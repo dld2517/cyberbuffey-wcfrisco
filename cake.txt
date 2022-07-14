@@ -1,0 +1,11 @@
+0. create a set a..z
+1. get the first char
+push it onto the stack
+compare the number of entries on the stack with the ordinal of the set
+receive the next number
+if it is one more, push
+if it is one less, pop
+once we get to zero we have the unique set
+place sets counter at 1
+we can keep processing the input, incrementing sets counter
+we can verify by checking primes
