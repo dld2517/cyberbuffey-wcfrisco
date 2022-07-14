@@ -1,0 +1,27 @@
+0. create a set a..z
+1. get the first char
+push it onto the stack
+compare the number of entries on the stack with the ordinal of the set
+receive the next number
+if it is one more, push
+if it is one less, pop
+once we get to zero we have the unique set
+place sets counter at 1
+we can keep processing the input, incrementing sets counter
+we can verify by checking primes
+
+one issue... 
+abababcde
+i basically need to have a reset condition that gets hit and it would handle it.
+soln: need a flag that remembers the size of the largest piece.
+there will have to be lookahead programmed into this.
+
+ababababcdeabababcababababababcdef
+the lookahead counter will be
+2 2 2 5 5 5 2
+when the counter of elements on my stack becomes smaller than the number of yet-largest elemetns on the stack,
+we meet a fail condition, keep the largest counter, and we start over.
+
+new soln
+two stacks
+
