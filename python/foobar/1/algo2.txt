@@ -1,0 +1,15 @@
+Accept input. 
+Count input count(n)
+If prime, exit and report count slices
+Access first character (n)
+Store first character as reference and later sanity check
+Loop Start
+Read next character? Is character equal to startchar?
+Yes, pop the set and push to a new stack
+No, push character to the stack
+Loop
+After reading the count character and pushing or popping 
+End loop
+Iterate through stack no 2 and count the elements in each set
+If they are not equal, go to phase 2
+If they are equal, pop off the stack and increment counter until stack2 is empty of sets. 
