@@ -1,11 +1,13 @@
 import re
-string = 'abcdeabcdeabcdeabcdeabcdeabcde'
+string = 'abccbaabccba'
+# string = 'abcdeabcdeabcdeabcdeabcdeabcde'
 # string = 'abcdabababcdabababcdabab'
 # string = 'abcabababcabcabababcabcabababcabcabababc'
 firstChar = string[0]
 print("string is: ",string,"  first char is: ",firstChar)
 groupCounts = []
 indexList = []
+smashSet = []
 splitList = re.finditer(firstChar,string)
 for j in splitList:
   print(j)
@@ -29,13 +31,29 @@ groupCounts.append(len(string[lastIndex:]))
 print("Here is the ordered list of character counts")
 for num in groupCounts:
     print(num)
-
+    print("num: ",type(num))
+    print("groupcounts: ",type(groupCounts))
 print("Number of records in the list")
-print(len(groupCounts))
+print("Number: elements: ",elements)
+print("Length Groupcounts",len(groupCounts))
+
 # Let's check to see if groupCounts are all the same before we launch off itnto mods
+
+
+"""
 for lst in groupCounts:
-    smashSet = (tuple(lst))
+    print("lst: ",type(lst))
+    print("groupCount: ",type(groupCounts))
+    try:
+        smashSet
+    except:
+        NameError
+        smashSet=set([])
+    else:
+        smashSet.append(tuple(lst))
+    
 checkSet=set(tuple(smashSet))
+"""
 
 print('List of MOD values')
 
@@ -56,7 +74,11 @@ for d in modVals:
     then I can compare the first entry of every list to see if it is the same, if it is, then campare the second, etc
     each time allowing a break to decide that it is different
 """
+compareList = []
 for b in modVals:
+    if len(set(groupCounts)) == 1:
+        print("There are ",elements, " slices of cake.")
+        break
     print("B is: ",b)
     compareList=[]
     iterI = 0
