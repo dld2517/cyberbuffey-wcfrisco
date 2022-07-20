@@ -1,6 +1,9 @@
 import re
 # string = 'abcdeabcdeabcdeabcdeabcdeabcde'
-string = 'abccbaabccba'
+# string = 'abccbaabccba'
+string = 'abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba'
+
+# string = 'abcabcabcabc'
 # string = 'abcdabababcdabababcdabab'
 # string = 'abcabababcabcabababcabcabababcabcabababc'
 firstChar = string[0]

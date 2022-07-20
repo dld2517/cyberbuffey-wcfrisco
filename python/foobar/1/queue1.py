@@ -1,8 +1,11 @@
 import re
-string = 'abccbaabccba'
+# string = 'abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba'
+# string = 'abczzabcabcabcabc'
+# string = 'abccbaabccba'
 # string = 'abcdeabcdeabcdeabcdeabcdeabcde'
 # string = 'abcdabababcdabababcdabab'
 # string = 'abcabababcabcabababcabcabababcabcabababc'
+string = input('Enter the test case: ')
 firstChar = string[0]
 print("string is: ",string,"  first char is: ",firstChar)
 groupCounts = []
